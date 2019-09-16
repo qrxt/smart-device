@@ -1,12 +1,24 @@
 .feature-card {
+  position: relative;
   display: flex;
   flex-direction: column;
+  padding: 99px 0 0 47px;
 
   width: 570px;
   min-height: 299px;
-  outline: 1px solid red;
   margin-bottom: 30px;
-  padding: 100px 0 0 45px;
+  border: 1px solid #ebebeb;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    background-color: $dodger-blue;
+    left: 1px;
+    top: 0;
+  }
 }
 
 .feature-card:not(:nth-child(2n)) {
