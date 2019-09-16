@@ -8,17 +8,34 @@
   letter-spacing: 0.05em;
 
   @include set-font(16px, 19px);
+}
 
-  &--filled {
-    border: none;
-    background-color: $dodger-blue;
-    color: $text-primary-color;
+.btn--filled {
+  border: none;
+  background-color: $dodger-blue;
+  color: $text-primary-color;
+
+  @include set-custom-transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $black;
+    outline: none;
   }
+}
 
-  &--bordered {
-    @include set-font(14px, 16px);
+.btn--bordered {
+  @include set-font(14px, 16px);
+  @include set-custom-transition(background-color);
 
-    padding: 18px 28px;
-    border: 1px solid $white;
+  padding: 18px 28px;
+  border: 1px solid $white;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $black;
+    outline: none;
   }
 }

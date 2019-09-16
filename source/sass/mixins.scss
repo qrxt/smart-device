@@ -18,7 +18,7 @@
 }
 
 @mixin set-custom-transition($prop:all) {
-  @include set-transition($prop, 0.15s, cubic-bezier(0.215, 0.61, 0.355, 1));
+  @include set-transition($prop, 0.25s, cubic-bezier(0.215, 0.61, 0.355, 1));
 }
 
 

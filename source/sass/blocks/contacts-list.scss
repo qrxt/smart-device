@@ -21,6 +21,13 @@
   font-family: $font-secondary;
   color: $text-primary-color;
 
+  &:hover,
+  &:focus {
+    color: rgba($text-primary-color, 0.6);
+    outline: none;
+  }
+
+  @include set-custom-transition(color);
   @include set-font(16px, 18px);
 }
 
@@ -36,4 +43,16 @@
 .contacts-list__link--phone svg {
   left: 7px;
   bottom: 2px;
+}
+
+@media (max-width: $desktop-width) {
+  .contacts-list__link {
+    font-size: 0;
+  }
+
+  .contacts-list__link svg {
+    width: 24px;
+    height: 24px;
+    outline: 1px solid;
+  }
 }

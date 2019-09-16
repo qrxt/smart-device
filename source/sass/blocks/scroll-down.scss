@@ -13,4 +13,11 @@
   transform: rotate(-90deg);
 
   @include set-font(14px, 16px);
+  @include set-custom-transition(color);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: rgba($text-primary-color--dark, 0.6);
+  }
 }

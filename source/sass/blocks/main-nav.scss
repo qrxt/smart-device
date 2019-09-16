@@ -14,3 +14,9 @@
 .main-nav__call-request {
   color: $text-primary-color;
 }
+
+@media (max-width: $desktop-width) {
+  .main-nav__call-request {
+    display: none;
+  }
+}

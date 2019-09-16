@@ -1,0 +1,32 @@
+.feature-card {
+  display: flex;
+  flex-direction: column;
+
+  width: 570px;
+  min-height: 299px;
+  outline: 1px solid red;
+  margin-bottom: 30px;
+  padding: 100px 0 0 45px;
+}
+
+.feature-card:not(:nth-child(2n)) {
+  margin-right: 35px;
+}
+
+.feature-card__title {
+  margin: 0 0 20px;
+
+  font-family: $font-primary;
+  color: $text-secondary-color--title;
+
+  @include set-font(24px, 34px);
+}
+
+.feature-card__description {
+  margin: 0 0 65px;
+
+  font-family: $font-secondary;
+  color: $text-secondary-color;
+
+  @include set-font(16px, 22px);
+}
