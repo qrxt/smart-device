@@ -11,6 +11,7 @@
 }
 
 .btn--filled {
+  padding: 18px 10px;
   border: none;
   background-color: $dodger-blue;
   color: $text-primary-color;
@@ -29,7 +30,7 @@
   @include set-font(14px, 16px);
   @include set-custom-transition(background-color);
 
-  padding: 18px 28px;
+  padding: 14px 29px 12px;
   border: 1px solid $white;
 
   &:hover,

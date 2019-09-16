@@ -2,7 +2,7 @@
   @include normalize-list();
 
   display: flex;
-  margin-right: 50px;
+  margin-right: 49px;
 }
 
 .contacts-list__item {
@@ -16,7 +16,7 @@
 .contacts-list__link {
   position: relative;
   display: block;
-  padding-top: 14px;
+  padding-top: 12px;
   padding-left: 40px;
   font-family: $font-secondary;
   color: $text-primary-color;
@@ -37,7 +37,7 @@
 
 .contacts-list__link--mail svg {
   left: 1px;
-  bottom: 4px;
+  bottom: 5px;
 }
 
 .contacts-list__link--phone svg {

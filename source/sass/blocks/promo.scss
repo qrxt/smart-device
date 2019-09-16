@@ -4,7 +4,7 @@
   background-image: url("../../img/curcuits@1x.png");
   background-repeat: no-repeat;
   background-size: 705px 515px;
-  background-position: 83% 0;
+  background-position: 1037px 2px;
 }
 
 .promo__inner {
@@ -21,7 +21,8 @@
   text-transform: uppercase;
   letter-spacing: 0.07em;
 
-  margin-bottom: 30px;
+  margin-left: -5px;
+  margin-bottom: 29px;
 
   @include set-font(80px, 94px, 700);
 }
@@ -30,7 +31,7 @@
   position: relative;
   margin: 0;
   padding-left: 94px;
-  margin-bottom: 44px;
+  margin-bottom: 45px;
 
   font-family: $font-secondary;
   text-transform: lowercase;
@@ -51,7 +52,7 @@
 
 .promo__btn {
   margin-left: 95px;
-  width: 405px;
+  width: 400px;
 
   margin-bottom: 275px;
 }
