@@ -1,0 +1,30 @@
+// Цветовые
+
+$white: #ffffff;
+$black: #000000;
+$dodger-blue: #00b2ff;
+
+$bg-primary-color: #1b2d37;
+$bg-secondary-color: #e5e5e5;
+$bg-secondary-color--contacts: $dodger-blue;
+
+$text-primary-color: $white;
+$text-primary-color--dark: rgba($white, 0.8);
+$text-secondary-color: #666666;
+$text-secondary-color--title: $dodger-blue;
+
+/* Шрифтовые переменные */
+
+$font-primary: "Roboto Condensed", "Arial", sans-serif;
+$font-secondary: "PT Mono", "Arial", sans-serif;
+
+// Брейкпоинты
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+/* Retina */
+
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

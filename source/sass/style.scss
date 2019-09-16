@@ -1,3 +1,14 @@
-h1 {
-  color: red;
-}
+// Vendors
+
+@import "vendors/normalize";
+
+// Общие стили
+
+@import "variables";
+@import "base";
+@import "mixins";
+@import "fonts";
+
+// Блоки
+
+// @import "blocks/...";

@@ -1,0 +1,22 @@
+
+@mixin normalize-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin set-font($size, $line-height, $weight:null) {
+  font-size: $size;
+  line-height: floor($line-height / $size * 100) / 100;
+  font-weight: $weight;
+}
+
+@mixin set-transition($property, $time, $transition) {
+  transition-property: $property;
+  transition-duration: $time;
+  transition-timing-function: $transition;
+}
+
+@mixin set-custom-transition($prop:all) {
+  @include set-transition($prop, 0.15s, cubic-bezier(0.215, 0.61, 0.355, 1));
+}
