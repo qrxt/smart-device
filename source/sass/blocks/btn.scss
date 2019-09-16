@@ -1,0 +1,24 @@
+.btn {
+  border-radius: 5px;
+  padding: 18px 28px;
+  text-align: center;
+
+  font-family: $font-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @include set-font(16px, 19px);
+
+  &--filled {
+    border: none;
+    background-color: $dodger-blue;
+    color: $text-primary-color;
+  }
+
+  &--bordered {
+    @include set-font(14px, 16px);
+
+    padding: 18px 28px;
+    border: 1px solid $white;
+  }
+}

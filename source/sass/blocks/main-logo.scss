@@ -1,0 +1,32 @@
+.main-logo {
+  display: flex;
+  align-items: center;
+  background-color: flex-start;
+}
+
+.main-logo img {
+  display: block;
+
+  margin-right: 18px;
+}
+
+.main-logo__wrapper {
+  padding-top: 5px;
+}
+
+.main-logo__title {
+  margin: 0 0 2px;
+  font-family: $font-primary;
+
+  @include set-font(25px, 29px, 700);
+}
+
+.main-logo__tagline {
+  margin: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  color: $text-primary-color--dark;
+  text-transform: lowercase;
+
+  @include set-font(12px, 14px);
+}

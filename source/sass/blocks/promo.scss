@@ -1,0 +1,57 @@
+.promo {
+  padding-top: 60px;
+
+  background-image: url("../../img/curcuits@1x.png");
+  background-repeat: no-repeat;
+  background-size: 705px 515px;
+  background-position: 83% 0;
+}
+
+.promo__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-right: 35%;
+}
+
+.promo__title {
+  margin: 0;
+
+  font-family: $font-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+
+  margin-bottom: 30px;
+
+  @include set-font(80px, 94px, 700);
+}
+
+.promo__description {
+  position: relative;
+  margin: 0;
+  padding-left: 94px;
+  margin-bottom: 44px;
+
+  font-family: $font-secondary;
+  text-transform: lowercase;
+
+  @include set-font(22px, 34px);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 66px;
+    height: 2px;
+    background-color: $bg-secondary-color;
+    position: absolute;
+    left: 0;
+    top: 14px;
+  }
+}
+
+.promo__btn {
+  margin-left: 95px;
+  width: 405px;
+
+  margin-bottom: 275px;
+}

@@ -1,0 +1,16 @@
+.main-nav {
+  margin-bottom: 174px;
+}
+
+.main-nav__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__right {
+  display: flex;
+}
+
+.main-nav__call-request {
+  color: $text-primary-color;
+}

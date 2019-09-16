@@ -9,7 +9,7 @@ $bg-secondary-color: #e5e5e5;
 $bg-secondary-color--contacts: $dodger-blue;
 
 $text-primary-color: $white;
-$text-primary-color--dark: rgba($white, 0.8);
+$text-primary-color--dark: rgba($white, 0.5);
 $text-secondary-color: #666666;
 $text-secondary-color--title: $dodger-blue;
 
@@ -18,11 +18,15 @@ $text-secondary-color--title: $dodger-blue;
 $font-primary: "Roboto Condensed", "Arial", sans-serif;
 $font-secondary: "PT Mono", "Arial", sans-serif;
 
+$font-default-size: 16px;
+
 // Брейкпоинты
 
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
+
+$desktop-wrapper-width: 1471px;
 
 /* Retina */
 

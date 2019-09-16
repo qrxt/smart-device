@@ -1,0 +1,16 @@
+.scroll-down {
+  position: absolute;
+  left: -22px;
+  bottom: 130px;
+
+  width: 120px;
+  background-color: transparent;
+  border: none;
+
+  font-family: $font-secondary;
+  color: $text-primary-color--dark;
+
+  transform: rotate(-90deg);
+
+  @include set-font(14px, 16px);
+}

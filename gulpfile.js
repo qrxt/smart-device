@@ -87,9 +87,9 @@ gulp.task('copy', function () {
     'source/img/**',
     'source/js/**',
     'source//*.ico'
-    ], {
-      base: 'source'
-    })
+  ], {
+    base: 'source'
+  })
   .pipe(gulp.dest('build'));
 });
 

@@ -19,8 +19,8 @@ body {
   word-wrap: break-word;
 
   font-family: $font-primary;
-  font-size: 72px;
-  color: $text-secondary-color;
+  font-size: $font-default-size;
+  color: $text-primary-color;
   line-height: 24px;
 }
 

@@ -1,0 +1,39 @@
+.contacts-list {
+  @include normalize-list();
+
+  display: flex;
+  margin-right: 50px;
+}
+
+.contacts-list__item {
+  padding-top: 7px;
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.contacts-list__link {
+  position: relative;
+  display: block;
+  padding-top: 14px;
+  padding-left: 40px;
+  font-family: $font-secondary;
+  color: $text-primary-color;
+
+  @include set-font(16px, 18px);
+}
+
+.contacts-list__link svg {
+  position: absolute;
+}
+
+.contacts-list__link--mail svg {
+  left: 1px;
+  bottom: 4px;
+}
+
+.contacts-list__link--phone svg {
+  left: 7px;
+  bottom: 2px;
+}
