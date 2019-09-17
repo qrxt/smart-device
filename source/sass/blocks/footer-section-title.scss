@@ -1,0 +1,7 @@
+.footer-section-title {
+  letter-spacing: 0.05em;
+  color: #1b2d37;
+  text-transform: uppercase;
+
+  @include set-font(15px, 16px, 400);
+}

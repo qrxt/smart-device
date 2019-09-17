@@ -1,0 +1,28 @@
+.site-sections__title {
+  margin: 0 0 26px;
+  padding-left: 3px;
+}
+
+.site-sections__list {
+  @include normalize-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 516px;
+}
+
+.site-sections__item {
+  min-width: 207px;
+}
+
+.site-sections__item:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+.site-sections__link {
+  font-family: $font-secondary;
+  color: rgba(#1b2d37, 0.5);
+
+  @include set-font(15px, 25px);
+}

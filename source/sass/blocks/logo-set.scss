@@ -1,27 +1,27 @@
-.main-logo {
+.logo-set {
   display: flex;
   align-items: center;
   background-color: flex-start;
 }
 
-.main-logo img {
+.logo-set img {
   display: block;
 
   margin-right: 15px;
 }
 
-.main-logo__wrapper {
+.logo-set__wrapper {
   padding-top: 5px;
 }
 
-.main-logo__title {
+.logo-set__title {
   margin: 0 0 2px;
   font-family: $font-primary;
 
   @include set-font(25px, 29px, 700);
 }
 
-.main-logo__tagline {
+.logo-set__tagline {
   margin: 0;
 
   font-family: "Roboto", "Arial", sans-serif;
@@ -29,4 +29,12 @@
   text-transform: lowercase;
 
   @include set-font(12px, 14px);
+}
+
+.logo-set--footer .logo-set__title {
+  color: #203c42;
+}
+
+.logo-set--footer .logo-set__tagline {
+  color: #788891;
 }

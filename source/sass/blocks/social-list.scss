@@ -1,0 +1,22 @@
+.social-list {
+  @include normalize-list();
+
+  display: flex;
+}
+
+.social-list__item {
+  width: 27px;
+  height: 27px;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social-list__link {
+  display: block;
+}
+
+.social-list__link svg {
+  fill: #cdcdcd;
+}
