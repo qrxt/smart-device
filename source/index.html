@@ -207,27 +207,121 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__inner wrapper">
-        <p class="contacts__caption section-caption">
-          Остались вопросы? Задайте их нам!
-        </p>
-        <p class="contacts__description">
-          Мы проконсультируем Вас бесплатно
-        </p>
-        <form class="contacts__form contacts-form" action="POST">
-          <fieldset>
-            <input type="text" name="first-name" placeholder="Имя">
-            <input type="tel" name="phone-number" placeholder="Телефон">
-          </fieldset>
-          <textarea name="user-question" placeholder="Ваш вопрос"></textarea>
-          <button type="submit">Задать вопрос</button>
-          <div class="contacts-form__field">
-            <input class="visually-hidden" type="checkbox" id="user-agreement">
-            <label for="user-agreement"></label>
-          </div>
-        </form>
+        <img src="img/paper-airplane@1x.png" alt="">
+        <div class="contacts__form-wrapper">
+          <p class="contacts__caption section-caption">
+            Остались вопросы? Задайте их нам!
+          </p>
+          <p class="contacts__description">
+            Мы проконсультируем Вас бесплатно
+          </p>
+          <form class="contacts__form contacts-form form" action="POST">
+            <div>
+              <input type="text" name="first-name" placeholder="Имя">
+              <input type="tel" name="phone-number" placeholder="Телефон">
+            </div>
+            <textarea name="user-question" placeholder="Ваш вопрос"></textarea>
+            <div>
+              <button type="submit">Задать вопрос</button>
+              <label for="user-agreement">
+                Я согласен на обработку персональных данных
+              </label>
+              <input class="visually-hidden" type="checkbox" id="user-agreement">
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__inner wrapper">
+      <div class="page-footer__useful-links">
+        <a class="page-footer__logo footer-logo">
+          <img src="img/logo-circuit.svg" width="52" height="52" alt="Логотип Smart Device">
+          <div class="footer-logo__wrapper">
+            <p class="footer-logo__title">Smart Device</p>
+            <p class="footer-logo__tagline">Умные технологии</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="page-footer__site-sections site-sections">
+        <h3 class="site-sections__title">
+          Разделы сайта
+        </h3>
+        <ul class="site-sections__list">
+          <li class="site-sections__item">
+            <a class="site-sections__link" href="#">
+              О компании
+            </a>
+          </li>
+
+          <li class="site-sections__item">
+            <a class="site-sections__link">
+              Продукты
+            </a>
+          </li>
+
+          <li class="site-sections__item">
+            <a class="site-sections__link">
+              Производство печатных плат
+            </a>
+          </li>
+
+          <li class="site-sections__item">
+            <a class="site-sections__link">
+              Монтаж печатных плат
+            </a>
+          </li>
+
+          <li class="site-sections__item">
+            <a class="site-sections__link">
+              Комплектующие
+            </a>
+          </li>
+
+          <li class="site-sections__item">
+            <a class="site-sections__link">
+              Доставка
+            </a>
+          </li>
+
+          <li class="site-sections__item">
+            <a class="site-sections__link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__address footer-address">
+        <h3 class="footer-address__title">
+          г. Мытищи, Олимпийский проспект, д.10<br>
+          +7 (495) 589-40-50<br>
+          +7 (925) 003-87-67<br>
+          +7 (926) 926-080-79
+        </h3>
+      </div>
+    </div>
+
+    <div class="page-footer__info footer-info">
+      <div class="footer-info__inner wrapper">
+        <p class="footer-info__item footer-info__item--rights">
+          Все права защищены
+        </p>
+        <p class="footer-info__item footer-info__item--rights">
+          1999-2018 SD Service Devices
+        </p>
+        <p class="footer-info__item footer-info__item--rights">
+          Условия конфиденциальности
+        </p>
+        <p class="footer-info__item footer-info__item--rights">
+          Developed by wow studio
+        </p>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/vendors/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>

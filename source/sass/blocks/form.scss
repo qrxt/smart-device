@@ -1,0 +1,76 @@
+.form fieldset {
+  border: none;
+}
+
+.form div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: none;
+}
+
+.form input {
+  padding: 14px 21px 18px;
+  background-color: rgba($white, 0.1);
+  border: none;
+
+  margin-bottom: 38px;
+
+  &::placeholder {
+    font-family: $font-secondary;
+    color: $text-primary-color;
+
+    @include set-font(16px, 22px);
+  }
+}
+
+.form div input {
+  width: 47.6%;
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 155px;
+  margin-bottom: 35px;
+  padding: 14px 20px 15px;
+  border: none;
+  background-color: rgba($white, 0.1);
+  resize: none;
+
+  &::placeholder {
+    font-family: $font-secondary;
+    color: $text-primary-color;
+
+    @include set-font(16px, 22px);
+  }
+}
+
+.form button {
+  width: 47.2%;
+  padding: 9px 30px 12px;
+  vertical-align: middle;
+  margin-left: 3px;
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 5px;
+
+  font-family: $font-primary;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @include set-font(14px, 16px, 700);
+}
+
+.form label {
+  width: 47.5%;
+  padding: 11px 15px 3px 42px;
+  font-family: $font-secondary;
+  color: rgba($white, 0.8);
+
+  @include set-font(14px, 16px);
+}
+
+.form label + input {
+  width: 0;
+}
