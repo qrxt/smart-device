@@ -7,6 +7,10 @@
   padding-top: 60px;
 }
 
+.page-footer__inner:not(:last-child) {
+  margin-bottom: 53px;
+}
+
 .page-footer__logo {
   margin-right: 170px;
   margin-bottom: 53px;
@@ -17,11 +21,4 @@
 .page-footer__site-sections {
   padding-top: 5px;
   margin-right: 140px;
-}
-
-.page-footer__address {
-}
-
-.page-footer__title {
-
 }
