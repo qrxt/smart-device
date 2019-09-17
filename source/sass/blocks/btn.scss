@@ -40,3 +40,19 @@
     outline: none;
   }
 }
+
+.btn--bordered-blue {
+  @include set-font(14px, 16px);
+  @include set-custom-transition(background-color);
+
+  padding: 14px 29px 12px;
+  border: 1px solid $dodger-blue;
+  color: $dodger-blue;
+
+  &:hover,
+  &:focus {
+    border-color: $text-secondary-color;
+    color: $text-secondary-color;
+    outline: none;
+  }
+}

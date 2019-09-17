@@ -1,0 +1,41 @@
+.about {
+  margin-bottom: 98px;
+}
+
+.about__inner {
+  padding-left: 330px;
+  padding-right: 160px;
+  padding-bottom: 15px;
+
+  background-repeat: no-repeat;
+  background-image: url("../img/2005.png");
+  background-position: 122px 6px;
+}
+
+.about__title {
+  margin: 0 0 25px;
+  color: $text-secondary-color;
+
+  @include set-font(36px, 51px);
+}
+
+.about__text {
+  margin: 0;
+  font-family: $font-secondary;
+  color: $text-secondary-color;
+
+  @include set-font(16px, 22px);
+}
+
+.about__text:not(:last-of-type) {
+  margin-bottom: 25px;
+}
+
+.about__text:last-of-type {
+  margin-bottom: 39px;
+}
+
+.about__btn {
+  display: block;
+  width: 180px;
+}

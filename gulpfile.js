@@ -79,7 +79,7 @@ gulp.task('sprite', function () {
       parserOptions: { xmlMode: true }
     }))
     .pipe(svgstore({ inlineSvg: true }))
-    .pipe(rename('sprite_auto.svg'))
+    .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
 });
 
