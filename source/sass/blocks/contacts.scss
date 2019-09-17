@@ -1,0 +1,19 @@
+.contacts {
+  padding-top: 91px;
+  padding-left: 49%;
+  background-color: $dodger-blue;
+}
+
+.contacts__caption {
+  margin: 0 0 13px;
+}
+
+.contacts__description {
+  @include set-font(16px, 22px);
+
+  display: block;
+  font-family: $font-secondary;
+  padding-left: 6px;
+  margin: 0 0 60px;
+  outline: 1px solid;
+}

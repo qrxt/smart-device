@@ -203,6 +203,30 @@
         </ul>
       </div>
     </section>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__inner wrapper">
+        <p class="contacts__caption section-caption">
+          Остались вопросы? Задайте их нам!
+        </p>
+        <p class="contacts__description">
+          Мы проконсультируем Вас бесплатно
+        </p>
+        <form class="contacts__form contacts-form" action="POST">
+          <fieldset>
+            <input type="text" name="first-name" placeholder="Имя">
+            <input type="tel" name="phone-number" placeholder="Телефон">
+          </fieldset>
+          <textarea name="user-question" placeholder="Ваш вопрос"></textarea>
+          <button type="submit">Задать вопрос</button>
+          <div class="contacts-form__field">
+            <input class="visually-hidden" type="checkbox" id="user-agreement">
+            <label for="user-agreement"></label>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
   <script src="js/vendors/svg4everybody.min.js"></script>

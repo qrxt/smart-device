@@ -12,6 +12,8 @@
   background-repeat: no-repeat;
   background-position: 10px 10px;
 
+  cursor: pointer;
+
   @include set-custom-transition(background-color);
 
   &::before {

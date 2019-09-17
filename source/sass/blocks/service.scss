@@ -1,12 +1,13 @@
 .service {
   position: relative;
-  width: 370px;
+  width: 26.2%;
   min-height: 620px;
-  padding: 31px 160px 0 45px;
+  padding: 31px 12% 0 45px;
   margin-bottom: 40px;
 
   background-color: darken(#1b3c3f, 4%);
   background-repeat: no-repeat;
+  background-size: cover;
 
   &::before {
     content: "";
@@ -36,7 +37,7 @@
 .service__link {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 95%;
 
   &::before {
     content: "";

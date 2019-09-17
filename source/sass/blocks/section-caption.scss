@@ -1,0 +1,5 @@
+.section-caption {
+  font-family: $font-primary;
+
+  @include set-font(36px, 51px, 400);
+}
