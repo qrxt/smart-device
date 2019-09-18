@@ -7,3 +7,9 @@
   background-image: url("../img/bg-lines.png");
   background-size: cover;
 }
+
+@media (max-width: $desktop-width) {
+  .page-header {
+    padding: 20px 0;
+  }
+}

@@ -41,3 +41,13 @@
   padding-left: 4px;
   margin: 0 0 50px;
 }
+
+/**/
+
+@media (max-width: $desktop-width) {
+  .contacts {
+    display: none;
+  }
+}
+
+/**/

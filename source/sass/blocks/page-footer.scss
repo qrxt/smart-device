@@ -18,3 +18,13 @@
   padding-left: 25px;
   margin: 0 auto;
 }
+
+/**/
+
+@media (max-width: $desktop-width) {
+  .page-footer {
+    display: none;
+  }
+}
+
+/**/

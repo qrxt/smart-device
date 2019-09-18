@@ -17,7 +17,20 @@
 }
 
 @media (max-width: $desktop-width) {
+  .main-nav {
+    margin-bottom: 37px;
+  }
+
+  .main-nav__right {
+    width: 20%;
+    justify-content: flex-end;
+  }
+
   .main-nav__call-request {
     display: none;
+  }
+
+  .main-nav__logo {
+    padding-left: 5px;
   }
 }

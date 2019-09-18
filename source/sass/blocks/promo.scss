@@ -73,3 +73,36 @@
   left: -25px;
   bottom: 76px;
 }
+
+@media (max-width: $desktop-width) {
+  .promo {
+    padding-top: 80px;
+  }
+
+  .promo__content {
+    width: 80%;
+  }
+
+  .promo__inner {
+    position: static;
+    padding-left: 95px;
+  }
+
+  .promo__inner img {
+    width: 465px;
+    height: 340px;
+    position: relative;
+    right: -11%;
+    top: -76px;
+  }
+
+  .promo__title {
+    @include set-font(60px, 70px, 700);
+  }
+
+  .promo__description {
+    padding-left: 47px;
+
+    @include set-font(18px, 28px);
+  }
+}
