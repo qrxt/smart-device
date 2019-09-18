@@ -44,3 +44,21 @@
     padding: 0;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .logo-set {
+    width: 45px;
+    height: 45px;
+    padding: 5px 0 0 2px;
+  }
+
+  .logo-set img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .logo-set__title,
+  .logo-set__tagline {
+    display: none;
+  }
+}

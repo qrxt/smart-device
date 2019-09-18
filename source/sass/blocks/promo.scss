@@ -43,7 +43,7 @@
   position: relative;
   margin: 0;
   padding-left: 94px;
-  margin-bottom: 43px;
+  margin-bottom: 46px;
 
   font-family: $font-secondary;
   text-transform: lowercase;
@@ -125,5 +125,48 @@
 
   .promo__scroll-down {
     display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .promo {
+    position: relative;
+  }
+
+  .promo__inner {
+    padding: 115px 15px 10px 20px;
+    flex-direction: column;
+  }
+
+  .promo__content {
+    max-width: 100%;
+  }
+
+  .promo__inner img {
+    position: absolute;
+    width: 301px;
+    height: 220px;
+    top: -80px;
+    right: calc(50% - 166px);
+  }
+
+  .promo__title {
+    margin-bottom: 25px;
+
+    @include set-font(40px, 47px);
+  }
+
+  .promo__description {
+    margin-bottom: 40px;
+
+    @include set-font(16px, 26px);
+  }
+
+  .promo__btn {
+    width: 100%;
+    margin: 0;
+
+    /**/
+    height: 56px;
   }
 }

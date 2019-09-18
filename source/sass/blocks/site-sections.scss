@@ -1,3 +1,7 @@
+.site-sections__inner {
+  display: flex;
+}
+
 .site-sections__title {
   margin: 0 0 26px;
   padding-left: 3px;
@@ -38,8 +42,23 @@
 }
 
 @media (max-width: $desktop-width) {
-  .site-sections {
-    margin: 0;
-    padding: 0;
+  .site-sections__inner {
+    display: flex;
+  }
+
+  .site-sections__wrapper {
+    width: 50.4%;
+  }
+
+  .site-sections__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: 180px;
+    max-width: auto;
+  }
+
+  .site-sections__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }

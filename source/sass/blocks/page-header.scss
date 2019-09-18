@@ -1,6 +1,6 @@
 .page-header {
   padding: 32px 0 0 0;
-  margin-bottom: 95px;
+  margin-bottom: 93px;
 
   background-color: $bg-primary-color;
   background-repeat: no-repeat;
@@ -12,5 +12,11 @@
   .page-header {
     padding: 20px 0;
     margin-bottom: 37px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    padding: 10px 0;
   }
 }

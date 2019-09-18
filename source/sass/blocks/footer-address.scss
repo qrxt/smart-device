@@ -41,3 +41,9 @@
   @include set-custom-transition(color);
   @include set-font(15px, 25px);
 }
+
+@media (max-width: $desktop-width) {
+  .footer-address__title {
+    padding-top: 0;
+  }
+}
