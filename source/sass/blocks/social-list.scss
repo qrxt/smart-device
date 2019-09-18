@@ -15,8 +15,24 @@
 
 .social-list__link {
   display: block;
+
+  @include set-custom-transition(fill);
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
 
 .social-list__link svg {
   fill: #cdcdcd;
+}
+
+.social-list__link:hover svg,
+.social-list__link:focus svg {
+  fill: rgba(#cdcdcd, 0.6);
+}
+
+.social-list__link:active svg {
+  fill: rgba(#cdcdcd, 0.3);
 }

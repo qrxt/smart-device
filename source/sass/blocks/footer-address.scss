@@ -29,5 +29,15 @@
   font-family: $font-secondary;
   color: rgba(#1b2d37, 0.5);
 
+  &:hover,
+  &:focus {
+    color: rgba(#1b2d37, 0.3);
+  }
+
+  &:active {
+    color: rgba(#1b2d37, 0.1);
+  }
+
+  @include set-custom-transition(color);
   @include set-font(15px, 25px);
 }

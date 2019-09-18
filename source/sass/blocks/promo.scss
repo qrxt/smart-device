@@ -1,17 +1,29 @@
 .promo {
+  overflow: hidden;
   padding-top: 60px;
-
-  background-image: url("../../img/curcuits@1x.png");
   background-repeat: no-repeat;
-  background-size: 705px 515px;
-  background-position: 1037px 2px;
+  background-image: url("../../img/triangles.svg");
+  background-position: 80% -140px;
+}
+
+.promo__content {
+  max-width: 53%;
+  z-index: 2;
 }
 
 .promo__inner {
   position: relative;
   display: flex;
-  flex-direction: column;
-  padding-right: 35%;
+  justify-content: space-between;
+  padding-bottom: 227px;
+  margin-bottom: 50px;
+}
+
+.promo__inner img {
+  position: absolute;
+  top: -60px;
+  right: -50px;
+  z-index: 1;
 }
 
 .promo__title {
@@ -31,7 +43,7 @@
   position: relative;
   margin: 0;
   padding-left: 94px;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
 
   font-family: $font-secondary;
   text-transform: lowercase;
@@ -51,8 +63,13 @@
 }
 
 .promo__btn {
-  margin-left: 95px;
-  width: 400px;
+  display: block;
+  width: 410px;
+  margin-left: 91px;
+}
 
-  margin-bottom: 275px;
+.promo__scroll-down {
+  position: absolute;
+  left: -25px;
+  bottom: 76px;
 }

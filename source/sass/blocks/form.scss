@@ -16,11 +16,19 @@
 
   margin-bottom: 38px;
 
+  @include set-custom-transition(background-color);
+
   &::placeholder {
     font-family: $font-secondary;
     color: $text-primary-color;
 
     @include set-font(16px, 22px);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($white, 0.2);
+    outline: none;
   }
 }
 
@@ -43,6 +51,12 @@
 
     @include set-font(16px, 22px);
   }
+
+  &:hover,
+  &:focus {
+    background-color: rgba($white, 0.2);
+    outline: none;
+  }
 }
 
 .form button {
@@ -59,6 +73,14 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $text-secondary-color;
+    outline: none;
+  }
+
+  @include set-custom-transition(background-color);
   @include set-font(14px, 16px, 700);
 }
 
