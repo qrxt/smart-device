@@ -7,6 +7,10 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
+  &:active {
+    opacity: 0.6;
+  }
+
   @include set-font(16px, 19px);
 }
 

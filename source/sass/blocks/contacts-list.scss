@@ -27,13 +27,26 @@
     outline: none;
   }
 
+  &:active {
+    color: rgba($text-primary-color, 0.3);
+  }
+
   @include set-custom-transition(color);
   @include set-font(16px, 18px);
 }
 
 .contacts-list__link svg {
   position: absolute;
-  fill: $white;
+  fill: $dodger-blue;
+}
+
+.contacts-list__link:hover svg,
+.contacts-list__link:focus svg {
+  opacity: 0.6;
+}
+
+.contacts-list__link:active svg {
+  opacity: 0.3;
 }
 
 .contacts-list__link--mail svg {

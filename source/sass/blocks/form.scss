@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-start;
   border: none;
 }
 
@@ -61,7 +62,7 @@
 
 .form button {
   width: 47.2%;
-  padding: 9px 30px 12px;
+  padding: 15px 30px 13px;
   vertical-align: middle;
   margin-left: 3px;
   background-color: transparent;
@@ -80,19 +81,69 @@
     outline: none;
   }
 
+  &:active {
+    opacity: 0.6;
+  }
+
   @include set-custom-transition(background-color);
   @include set-font(14px, 16px, 700);
 }
 
 .form label {
+  position: relative;
   width: 47.5%;
   padding: 11px 15px 3px 42px;
   font-family: $font-secondary;
   color: rgba($white, 0.8);
 
   @include set-font(14px, 16px);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 1px solid $white;
+  }
 }
 
+/*
 .form label + input {
   width: 0;
+}
+*/
+
+.form input[type="checkbox"] {
+  appearance: none;
+  position: absolute;
+  width: 1px;
+
+  &::-ms-check {
+    display: none;
+  }
+}
+
+.form input[type="checkbox"]:not(:disabled):hover ~ label::before,
+.form input[type="checkbox"]:not(:disabled):focus ~ label::before {
+  border: 1px solid rgba($white, 0.6);
+}
+
+.form input[type="checkbox"]:not(:disabled):active ~ label::before {
+  border: 1px solid rgba($white, 0.3);
+}
+
+.form input[type="checkbox"]:checked ~ label::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 5px;
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../img/checkbox-tick.svg");
 }

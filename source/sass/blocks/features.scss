@@ -1,4 +1,5 @@
 .features {
+  position: relative;
   margin-bottom: 75px;
 }
 
@@ -6,4 +7,50 @@
   display: flex;
   flex-wrap: wrap;
   padding-left: 120px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 636px;
+    height: 636px;
+    position: absolute;
+    top: 239px;
+    left: 34%;
+    transform: scale(-1, 1);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url("../img/triangle.svg");
+    background-size: cover;
+  }
+}
+
+.features__item:first-child {
+  &::after {
+    content: "";
+    display: block;
+    width: 299px;
+    height: 299px;
+    position: absolute;
+    top: -70px;
+    left: -170px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url("../img/triangle.svg");
+  }
+}
+
+.features__item:last-child {
+  &::after {
+    content: "";
+    display: block;
+    width: 299px;
+    height: 299px;
+    position: absolute;
+    top: 20px;
+    left: 108%;
+    transform: scale(-1, 1);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url("../img/triangle.svg");
+  }
 }
