@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#1B2D37">
   <meta name="format-detection" content="telephone=no">
@@ -75,7 +75,16 @@
             Скролл вниз
           </button>
         </div>
-        <img src="img/curcuits@1x.png" alt="Печатные платы">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/circuits-mobile@1x.webp 1x, img/circuits-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/circuits-tablet@1x.webp 1x, img/circuits-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/circuits-desktop@1x.webp 1x, img/circuits-desktop@2x.webp 2x">
+
+
+          <source media="(max-width: 767px)" srcset="img/circuits-mobile@1x.png 1x, img/circuits-mobile@2x.png 2x">
+          <source media="(max-width: 1023px)" srcset="img/circuits-tablet@1x.png 1x, img/circuits-tablet@2x.png 2x">
+          <img src="img/circuits-desktop@1x.png" alt="Печатные платы" width="705" height="515" srcset="img/circuits-desktop@2x.png">
+        </picture>
       </div>
     </section>
   </header>

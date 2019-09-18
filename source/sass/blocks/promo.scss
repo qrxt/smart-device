@@ -92,10 +92,10 @@
   }
 
   .promo__inner img {
-    width: 465px;
+    width: 260px;
     height: 340px;
-    position: relative;
-    right: -4%;
+    position: absolute;
+    right: 0;
     top: -76px;
   }
 
@@ -146,10 +146,10 @@
 
   .promo__inner img {
     position: absolute;
-    width: 301px;
+    width: 294px;
     height: 220px;
     top: -80px;
-    right: calc(50% - 166px);
+    right: calc(50% - 160px);
   }
 
   .promo__title {
@@ -167,8 +167,5 @@
   .promo__btn {
     width: 100%;
     margin: 0;
-
-    /**/
-    height: 56px;
   }
 }

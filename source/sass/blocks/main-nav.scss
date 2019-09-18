@@ -9,6 +9,8 @@
 
 .main-nav__right {
   display: flex;
+  align-items: flex-start;
+  max-width: 70%;
 }
 
 .main-nav__call-request {
@@ -22,7 +24,6 @@
   }
 
   .main-nav__right {
-    width: 20%;
     justify-content: flex-end;
   }
 

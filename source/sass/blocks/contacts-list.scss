@@ -2,6 +2,7 @@
   @include normalize-list();
 
   display: flex;
+  flex-wrap: wrap;
   margin-right: 49px;
 }
 
