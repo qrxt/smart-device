@@ -22,3 +22,24 @@
 .services__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
+
+@media (max-width: $desktop-width) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 36px;
+  }
+
+  .services__caption {
+    padding-left: 0;
+    padding-right: 90px;
+    margin-bottom: 50px;
+
+    @include set-font(32px, 45px, 400);
+  }
+
+  .services__list {
+    padding: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

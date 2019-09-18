@@ -42,12 +42,33 @@
   margin: 0 0 50px;
 }
 
-/**/
-
 @media (max-width: $desktop-width) {
   .contacts {
+    background-image: none;
+  }
+
+  .contacts__inner {
+    display: block;
+    padding-top: 74px;
+    padding-left: 74px;
+    padding-bottom: 104px;
+  }
+
+  .contacts__form-wrapper {
+    width: 100%;
+    padding-top: 2px;
+    padding-left: 15px;
+  }
+
+  .contacts__description {
+    margin-bottom: 56px;
+  }
+
+  .contacts__inner img {
     display: none;
   }
-}
 
-/**/
+  .contacts__form {
+    width: 91%;
+  }
+}

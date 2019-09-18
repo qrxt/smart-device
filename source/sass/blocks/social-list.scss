@@ -36,3 +36,9 @@
 .social-list__link:active svg {
   fill: rgba(#cdcdcd, 0.3);
 }
+
+@media (max-width: $desktop-width) {
+  .social-list {
+    align-items: center;
+  }
+}

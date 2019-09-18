@@ -76,23 +76,26 @@
 
 @media (max-width: $desktop-width) {
   .promo {
-    padding-top: 80px;
+    padding-top: 117px;
+    background-position: 441px -124px;
+    background-size: 530px 530px;
   }
 
   .promo__content {
-    width: 80%;
+    max-width: 60%;
   }
 
   .promo__inner {
-    position: static;
+    position: relative;
     padding-left: 95px;
+    padding-bottom: 87px;
   }
 
   .promo__inner img {
     width: 465px;
     height: 340px;
     position: relative;
-    right: -11%;
+    right: -4%;
     top: -76px;
   }
 
@@ -101,8 +104,26 @@
   }
 
   .promo__description {
-    padding-left: 47px;
+    padding-top: 2px;
+    padding-left: 45px;
+    margin-bottom: 55px;
 
     @include set-font(18px, 28px);
+
+    &::before {
+      left: -4px;
+      top: 18px;
+      width: 33px;
+    }
+  }
+
+  .promo__btn {
+    padding: 20px 12px;
+    margin-left: 45px;
+    width: 380px;
+  }
+
+  .promo__scroll-down {
+    display: none;
   }
 }

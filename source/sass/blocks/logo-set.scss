@@ -38,3 +38,9 @@
 .logo-set--footer .logo-set__tagline {
   color: #788891;
 }
+
+@media (max-width: $desktop-width) {
+  .logo-set {
+    padding: 0;
+  }
+}

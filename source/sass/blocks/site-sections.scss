@@ -36,3 +36,10 @@
   @include set-custom-transition(color);
   @include set-font(15px, 25px);
 }
+
+@media (max-width: $desktop-width) {
+  .site-sections {
+    margin: 0;
+    padding: 0;
+  }
+}

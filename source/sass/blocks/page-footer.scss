@@ -19,11 +19,24 @@
   margin: 0 auto;
 }
 
-/**/
-
 @media (max-width: $desktop-width) {
-  .page-footer {
-    display: none;
+  .page-footer__inner {
+    padding-top: 14px;
+    flex-direction: column;
+    //align-items: flex-end;
+  }
+
+  .page-footer__useful-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #626962;
+  }
+
+  .page-footer__logo {
+    width: auto;
+    margin-bottom: 0;
   }
 }
 

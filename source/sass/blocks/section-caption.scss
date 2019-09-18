@@ -3,3 +3,9 @@
 
   @include set-font(36px, 51px, 400);
 }
+
+@media (max-width: $desktop-width) {
+  .section-caption {
+    @include set-font(32px, 51px, 400);
+  }
+}

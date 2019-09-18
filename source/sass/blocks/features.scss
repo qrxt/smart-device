@@ -54,3 +54,21 @@
     background-image: url("../img/triangle.svg");
   }
 }
+
+@media (max-width: $desktop-width) {
+  .features {
+    margin-bottom: 20px;
+  }
+
+  .features__list {
+    padding: 0;
+  }
+
+  .features__list::after {
+    display: none;
+  }
+
+  .features__item:last-child::after {
+    display: none; /**/
+  }
+}

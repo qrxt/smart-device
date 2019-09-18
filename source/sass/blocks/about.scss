@@ -39,3 +39,44 @@
   display: block;
   width: 180px;
 }
+
+@media (max-width: $desktop-width) {
+  .about {
+    margin-bottom: 72px;
+  }
+
+  .about__title {
+    margin-bottom: 22px;
+
+    @include set-font(32px, 55px, 400);
+  }
+
+  .about__text {
+    padding-left: 3px;
+  }
+
+  .about__text:last-child {
+    margin-bottom: 42px;
+
+    &::after {
+      content: "..";
+      display: inline;
+      position: absolute;
+    }
+  }
+
+  .about__rest {
+    display: none;
+  }
+
+  .about__inner {
+    padding-left: 210px;
+    padding-right: 20px;
+    background-position: -8px 4px;
+    background-size: 250px 360px;
+  }
+
+  .about__btn {
+    margin-left: 2px;
+  }
+}

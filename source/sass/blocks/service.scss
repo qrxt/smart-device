@@ -88,3 +88,26 @@
 
   @include set-font(20px, 31px, 400);
 }
+
+@media (max-width: $desktop-width) {
+  .service {
+    width: 100%;
+    min-height: 256px;
+    background-size: cover;
+    padding: 20px 70% 0 45px;
+    margin-bottom: 45px;
+
+    &--manufacturing {
+      background-image: url("../img/bg-tablet-manufacturing.jpg");
+    }
+
+    &--installation {
+      background-image: url("../img/bg-tablet-installation.jpg");
+    }
+
+    &--lighting {
+      padding-top: 32px;
+      background-image: url("../img/bg-tablet-lighting.jpg");
+    }
+  }
+}
