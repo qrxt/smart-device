@@ -11,3 +11,23 @@
 
   @include set-font(15px, 25px);
 }
+
+.footer-address__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-address__item {
+  margin: 0;
+  font-family: $font-secondary;
+  color: rgba(#1b2d37, 0.5);
+
+  @include set-font(15px, 25px);
+}
+
+.footer-address__link {
+  font-family: $font-secondary;
+  color: rgba(#1b2d37, 0.5);
+
+  @include set-font(15px, 25px);
+}
