@@ -131,6 +131,8 @@
 @media (max-width: $tablet-width) {
   .promo {
     position: relative;
+    background-position: -85% -110px;
+    background-size: 500px 500px;
   }
 
   .promo__inner {

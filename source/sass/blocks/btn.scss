@@ -14,6 +14,10 @@
   @include set-font(16px, 19px);
 }
 
+.btn__pre {
+  display: none;
+}
+
 .btn--filled {
   padding: 18px 10px;
   border: none;
@@ -58,5 +62,15 @@
     border-color: $text-secondary-color;
     color: $text-secondary-color;
     outline: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .btn__full {
+    display: none;
+  }
+
+  .btn__pre {
+    display: inline;
   }
 }
