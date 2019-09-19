@@ -1,75 +1,60 @@
 .page-footer {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  margin: 0 auto;
 }
 
 .page-footer__row {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  outline: 1px solid red;
-  padding-top: 60px;
-  padding-left: 65px;
+  width: 100%;
+  padding-bottom: 55px;
+  border: 1px solid #ececec;
+
+  &--links {
+    padding-top: 40px;
+  }
 }
 
-.page-footer__inner:not(:last-child) {
-  margin-bottom: 53px;
+.page-footer__inner {
+  width: 100%;
+  display: flex;
 }
 
 .page-footer__logo {
-  margin-bottom: 53px;
-  padding-top: 5px;
-  width: 250px;
+  margin-bottom: 52px;
 }
 
-.page-footer__links-inner {
-  outline: 1px solid green;
-  margin-right: 120px;
+.page-footer__social {
+  margin-left: -2px;
+  margin-right: 205px;
 }
 
-.page-footer__site-sections {
-  padding-top: 5px;
-  padding-left: 25px;
-  margin: 0 50px 0 0;
+.page-footer__links {
+  padding-top: 10px;
 }
 
-@media (max-width: $desktop-width) {
-  .page-footer {
-    display: flex;
-    flex-direction: column;
+.page-footer__additional-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.page-footer__additional {
+  font-family: $font-secondary;
+  color: rgba(#1b2d37, 0.5);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-top: 7px;
+
+  &--rights {
+    margin-right: 5%;
   }
 
-  .page-footer__useful-links {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 28px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #626962;
+  &--copyright {
+    margin-right: 10%;
   }
 
-  .page-footer__links-inner {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  &--developer {
+    margin-left: auto;
   }
 
-  .page-footer__site-sections {
-    width: 100%;
-    margin-bottom: 36px;
-  }
-
-  .page-footer__sections-inner {
-    width: 100%;
-  }
-
-  .page-footer__logo {
-    width: auto;
-    margin-bottom: 0;
-  }
+  @include set-font(13px, 24px);
 }

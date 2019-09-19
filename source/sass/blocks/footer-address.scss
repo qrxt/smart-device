@@ -1,15 +1,13 @@
-.footer-address__title {
-  margin: 0 0 26px;
-  padding-left: 2px;
-  padding-top: 6px;
+.footer-address {
+  padding-top: 25px;
+  padding-left: 19px;
 }
 
-.footer-address__text {
-  margin: 0;
-  font-family: $font-secondary;
-  color: rgba(#1b2d37, 0.5);
+.footer-address__title {
+  margin: 0 0 26px;
+  font-family: $font-primary;
 
-  @include set-font(15px, 25px);
+  @include set-font(15px, 16px);
 }
 
 .footer-address__items {
@@ -18,9 +16,9 @@
 }
 
 .footer-address__item {
-  margin: 0;
   font-family: $font-secondary;
   color: rgba(#1b2d37, 0.5);
+  margin: 0;
 
   @include set-font(15px, 25px);
 }
@@ -29,21 +27,5 @@
   font-family: $font-secondary;
   color: rgba(#1b2d37, 0.5);
 
-  &:hover,
-  &:focus {
-    color: rgba(#1b2d37, 0.3);
-  }
-
-  &:active {
-    color: rgba(#1b2d37, 0.1);
-  }
-
-  @include set-custom-transition(color);
   @include set-font(15px, 25px);
-}
-
-@media (max-width: $desktop-width) {
-  .footer-address__title {
-    padding-top: 0;
-  }
 }

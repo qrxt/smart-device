@@ -1,5 +1,9 @@
+/*
 .site-sections__inner {
   display: flex;
+  justify-content: space-between;
+  width: 60%;
+  outline: 1px solid purple;
 }
 
 .site-sections__title {
@@ -11,13 +15,11 @@
   @include normalize-list();
 
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 516px;
-}
-
-.site-sections__item {
-  min-width: 207px;
+  width: 428px;
+  max-height: 120px;
 }
 
 .site-sections__item:not(:last-child) {
@@ -62,3 +64,4 @@
     margin-bottom: 0;
   }
 }
+*/
