@@ -159,3 +159,55 @@
     margin-bottom: 39px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .form {
+    padding-left: 5px;
+  }
+
+  .form div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form div input {
+    width: 100%;
+    padding: 14px 17px 18px;
+  }
+
+  .form div input:not(:last-child) {
+    margin-bottom: 31px;
+  }
+
+  .form div input:last-child {
+    margin-bottom: 30px;
+  }
+
+  .form textarea {
+    padding: 14px 0 0 18px;
+    margin-bottom: 27px;
+    min-height: 104px;
+  }
+
+  .form button {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 21px;
+    letter-spacing: 0.05em;
+
+    @include set-font(13px, 16px, 400);
+  }
+
+  .form label {
+    width: 100%;
+    padding-left: 34px;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .form input[type="checkbox"]:checked ~ label::after {
+    left: 4px;
+  }
+}

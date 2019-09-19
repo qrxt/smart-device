@@ -13,11 +13,13 @@
   justify-content: flex-end;
 }
 
-.contacts__inner img {
+.contacts__airplane-deco {
   width: 511px;
   height: 288px;
   margin-top: 70px;
   margin-right: 100px;
+  background-repeat: no-repeat;
+  background-image: url("../img/paper-airplane.svg");
 }
 
 .contacts__form-wrapper {
@@ -64,11 +66,38 @@
     margin-bottom: 56px;
   }
 
-  .contacts__inner img {
+  .contacts__airplane-deco {
     display: none;
   }
 
   .contacts__form {
     width: 91%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts__inner {
+    padding: 28px 10px 37px;
+  }
+
+  .contacts__form-wrapper {
+    padding: 0;
+  }
+
+  .contacts__caption {
+    margin-bottom: 14px;
+    padding-left: 5px;
+
+    @include set-font(28px, 40px, 400);
+  }
+
+  .contacts__description {
+    margin-bottom: 26px;
+
+    @include set-font(16px, 22px);
+  }
+
+  .contacts__form {
+    width: 100%;
   }
 }
