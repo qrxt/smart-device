@@ -8,3 +8,9 @@
     margin-bottom: 39px;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .footer-social {
+    margin-bottom: 51px;
+  }
+}

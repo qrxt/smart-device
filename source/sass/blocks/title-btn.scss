@@ -1,0 +1,40 @@
+.title-btn {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .title-btn {
+    position: relative;
+    display: block;
+    padding: 31px 0 28px 15px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+
+    font-family: $font-primary;
+    text-align: left;
+    text-transform: uppercase;
+    color: #1b2d37;
+    letter-spacing: 0.05em;
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      background-color: #c4c4c4;
+    }
+
+    &--closed {
+      &::before {
+        transform: rotate(-90deg);
+      }
+    }
+
+    @include set-font(15px, 16px);
+  }
+}

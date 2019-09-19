@@ -29,3 +29,27 @@
 
   @include set-font(15px, 25px);
 }
+
+@media (max-width: $tablet-width) {
+  .footer-address {
+    padding: 0;
+  }
+
+  .footer-address__items {
+    display: none;
+    padding: 5px 40px 20px 15px;
+    margin-bottom: 18px;
+
+    &--show {
+      display: flex;
+    }
+  }
+
+  .footer-address__title {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+}
