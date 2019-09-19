@@ -52,6 +52,10 @@
     z-index: -1;
     background-repeat: no-repeat;
     background-image: url("../img/triangle.svg");
+
+    @media (max-width: 1855px) {
+      display: none;
+    }
   }
 }
 
