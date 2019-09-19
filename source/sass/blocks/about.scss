@@ -1,5 +1,5 @@
 .about {
-  margin-bottom: 98px;
+  margin-bottom: 103px;
 }
 
 .about__inner {
@@ -13,7 +13,7 @@
 }
 
 .about__title {
-  margin: 0 0 24px;
+  margin: 0 0 23px;
   color: $text-secondary-color;
 
   @include set-font(36px, 51px, 400);
@@ -28,21 +28,22 @@
 }
 
 .about__text:not(:last-of-type) {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .about__text:last-of-type {
-  margin-bottom: 39px;
+  margin-bottom: 44px;
 }
 
 .about__btn {
   display: block;
+  padding: 14px 29px 13px;
   width: 180px;
 }
 
 @media (max-width: $desktop-width) {
   .about {
-    margin-bottom: 72px;
+    margin-bottom: 70px;
   }
 
   .about__title {
