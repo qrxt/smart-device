@@ -9,14 +9,14 @@
 
   background-repeat: no-repeat;
   background-image: url("../img/2005.png");
-  background-position: 122px 6px;
+  background-position: 122px 5px;
 }
 
 .about__title {
-  margin: 0 0 25px;
+  margin: 0 0 24px;
   color: $text-secondary-color;
 
-  @include set-font(36px, 51px);
+  @include set-font(36px, 51px, 400);
 }
 
 .about__text {
@@ -28,7 +28,7 @@
 }
 
 .about__text:not(:last-of-type) {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .about__text:last-of-type {
@@ -56,7 +56,7 @@
   }
 
   .about__text:last-child {
-    margin-bottom: 42px;
+    margin-bottom: 43px;
 
     &::after {
       content: "..";
@@ -77,6 +77,45 @@
   }
 
   .about__btn {
-    margin-left: 2px;
+    margin-left: 3px;
+    padding: 16px 29px 12px;
   }
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    margin-bottom: 65px;
+  }
+
+  .about__inner {
+    background: none;
+    padding: 0 12px 0 13px;
+  }
+
+  .about__title {
+    margin-bottom: 24px;
+
+    @include set-font(28px, 39px, 400);
+  }
+
+  .about__text {
+    @include set-font(16px, 22px);
+  }
+
+  .about__text:not(:last-of-type) {
+    margin-bottom: 46px;
+  }
+
+  .about__text:last-child {
+    margin-bottom: 35px;
+  }
+
+  .about__btn {
+    margin-left: 4px;
+    padding-top: 12px;
+    padding-bottom: 14px;
+
+    @include set-font(14px, 16px);
+  }
+
 }

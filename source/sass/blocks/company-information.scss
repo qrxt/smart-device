@@ -8,13 +8,21 @@
       width: 700px;
       height: 700px;
       position: absolute;
-      top: 32%;
+      top: 21%;
       right: 0;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: -200px 0;
       background-image: url("../img/triangle.svg");
       transform: scale(-1, 1);
+      z-index: -1;
     }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .company-information::before {
+    top: 45.5%;
+    background-position: -320px 0;
   }
 }
