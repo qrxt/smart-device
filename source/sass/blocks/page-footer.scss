@@ -45,6 +45,20 @@
   text-transform: uppercase;
   padding-top: 7px;
 
+  &--link {
+    padding-top: 20px;
+    display: block;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
   &--rights {
     margin-right: 5%;
   }

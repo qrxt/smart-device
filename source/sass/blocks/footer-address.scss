@@ -27,6 +27,15 @@
   font-family: $font-secondary;
   color: rgba(#1b2d37, 0.5);
 
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @include set-font(15px, 25px);
 }
 
