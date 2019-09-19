@@ -375,8 +375,36 @@
   </footer>
 
   <div class="overlay"></div>
+  <div class="feedback-popup">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <div class="feedback-popup__form-wrapper">
+      <p class="feedback-popup__caption section-caption">
+        Закажите звонок
+      </p>
+      <p class="feedback-popup__description">
+        Оставьте контакты, мы проконсультируем вас
+        бесплатно в удобное время
+      </p>
+      <form class="feedback-popup__form form form--popup" action="POST">
+        <div>
+          <input type="text" name="first-name" placeholder="Имя">
+          <input type="tel" name="phone-number" placeholder="Телефон">
+        </div>
+        <textarea name="user-question" placeholder="Ваш вопрос"></textarea>
+        <div>
+          <button type="submit">Отправить</button>
+          <input class="visually-hidden" type="checkbox" id="user-agreement-popup">
+          <label for="user-agreement-popup">
+            Я согласен на обработку персональных данных
+          </label>
+        </div>
+      </form>
+    </div>
+    <button class="feedback-popup__close" type="button" aria-label="Закрыть форму обратной связи"></button>
+  </div>
   <script src="js/vendors/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
+  <script src="js/index.min.js"></script>
 </body>
 
 </html>
