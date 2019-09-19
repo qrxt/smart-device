@@ -1,3 +1,10 @@
 .footer-social {
   padding-top: 25px;
 }
+
+@media (max-width: $desktop-width) {
+  .footer-social {
+    padding-top: 18px;
+    margin-bottom: 39px;
+  }
+}
