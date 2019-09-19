@@ -10,7 +10,7 @@
 
 @media (max-width: $desktop-width) {
   .page-header {
-    padding: 20px 0;
+    padding: 21px 0;
     margin-bottom: 37px;
   }
 }
@@ -18,5 +18,6 @@
 @media (max-width: $tablet-width) {
   .page-header {
     padding: 10px 0;
+    margin-bottom: 18px;
   }
 }

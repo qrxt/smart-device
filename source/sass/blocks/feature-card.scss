@@ -2,10 +2,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 99px 45px 0 44px;
+  padding: 95px 40px 0 44px;
 
   width: 44.2%;
-  min-height: 303px;
+  min-height: 300px;
   margin-bottom: 30px;
   border: 1px solid #ebebeb;
   background-color: $white;
@@ -87,13 +87,17 @@
   }
 
   .feature-card__title {
-    margin-bottom: 10px;
+    margin-bottom: 13px;
 
     @include set-font(24px, 34px, 400);
   }
 
   .feature-card--hat .feature-card__title {
     margin-bottom: 15px;
+  }
+
+  .feature-card--label .feature-card__title {
+    margin-bottom: 7px;
   }
 
   .feature-card__description {
@@ -122,5 +126,55 @@
     height: 32px;
     top: 25px;
     left: 28px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .feature-card {
+    width: 100%;
+    min-height: 312px;
+    padding: 72px 0 0 26px;
+  }
+
+  .feature-card:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+
+  .feature-card:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  .feature-card__title {
+    margin-bottom: 12px;
+
+    @include set-font(20px, 28px, 400);
+  }
+
+  .feature-card__description {
+    padding-right: 15px;
+
+    @include set-font(16px, 22px);
+  }
+
+  .feature-card--guys .feature-card__description {
+    padding-right: 0;
+  }
+
+  .feature-card--hat {
+    min-height: 232px;
+    padding-top: 65px;
+    padding-right: 20px;
+  }
+
+  .feature-card--hat .feature-card__title {
+    margin-bottom: -6px;
+  }
+
+  .feature-card--label {
+    min-height: 244px;
+  }
+
+  .feature-card--label .feature-card__title {
+    margin-bottom: 12px;
   }
 }

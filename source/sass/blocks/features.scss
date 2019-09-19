@@ -58,6 +58,7 @@
 @media (max-width: $desktop-width) {
   .features {
     margin-bottom: 20px;
+    position: relative;
   }
 
   .features__list {
@@ -68,7 +69,17 @@
     display: none;
   }
 
+  .features__item:first-child::after {
+    display: none;
+  }
+
   .features__item:last-child::after {
-    display: none; /* временно */
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .features__list {
+    display: block;
   }
 }
