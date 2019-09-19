@@ -8,6 +8,14 @@ var btnToListAssoc = {
   '.title-btn--links': '.footer-links__list'
 };
 
+var menuSelectors = ['.footer-address__items', '.footer-links__list'];
+menuSelectors.forEach(function (selector) {
+  var currentMenu = footer.querySelector(selector);
+  if (currentMenu) {
+    currentMenu.classList.remove(selector.slice(1) + '--nojs');
+  }
+});
+
 if (footer) {
   btnSelectors.forEach(function (menuBtnSelector) {
     var currentBtn = footer.querySelector(menuBtnSelector);
@@ -18,6 +26,7 @@ if (footer) {
         var currentMenu = footer.querySelector(currentMenuSelector);
 
         if (currentMenu) {
+          currentBtn.classList.toggle('title-btn--closed');
           currentMenu.classList.toggle(currentMenuSelector.slice(1) + '--show');
         }
       });

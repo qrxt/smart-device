@@ -48,6 +48,7 @@
     display: none;
     padding: 5px 40px 20px 15px;
 
+    &--nojs,
     &--show {
       display: flex;
     }
