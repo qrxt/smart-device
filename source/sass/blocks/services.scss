@@ -25,7 +25,7 @@
 
 @media (max-width: $desktop-width) {
   .services {
-    padding-top: 50px;
+    padding-top: 48px;
     padding-bottom: 36px;
   }
 
@@ -41,5 +41,19 @@
     padding: 0;
     flex-direction: column;
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .services {
+    padding-top: 50px;
+  }
+
+  .services__caption {
+    padding-left: 12px;
+    padding-right: 0;
+    margin-bottom: 42px;
+
+    @include set-font(28px, 40px);
   }
 }

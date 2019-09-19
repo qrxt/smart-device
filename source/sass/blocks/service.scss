@@ -111,3 +111,24 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .service {
+    padding: 0 100px 0 34px;
+    margin-bottom: 30px;
+
+    &--manufacturing {
+      background-image: url("../img/bg-mobile-manufacturing.jpg");
+    }
+
+    &--installation {
+      background-image: url("../img/bg-mobile-installation.jpg");
+    }
+
+    &--lighting {
+      padding: 10px 100px 0 34px;
+      background-image: url("../img/bg-mobile-lighting.jpg");
+    }
+  }
+}
+
