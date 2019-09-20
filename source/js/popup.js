@@ -7,9 +7,29 @@ var feedbackPopup = document.querySelector('.feedback-popup');
 var closeBtn = feedbackPopup.querySelector('.feedback-popup__close');
 var overlay = document.querySelector('.overlay');
 
+var feedbackPopupForm = feedbackPopup.querySelector('form');
+var feedbackPopupFormName = feedbackPopupForm.querySelector('input[name="first-name"]');
+var feedbackPopupFormPhone = feedbackPopupForm.querySelector('input[name="phone-number"]');
+
 var selectorFeedbackPopupShow = 'feedback-popup--show';
 
 var KEYCODE_ESCAPE = 27;
+
+var userName = null;
+var userPhoneNumber = null;
+
+if (localStorage && localStorage.getItem('userName')) {
+  userName = localStorage.getItem('userName');
+}
+
+if (localStorage && localStorage.getItem('userPhoneNumber')) {
+  userPhoneNumber = localStorage.getItem('userPhoneNumber');
+}
+
+if (userName && userPhoneNumber) {
+  feedbackPopupFormName.value = userName;
+  feedbackPopupFormPhone.value = userPhoneNumber;
+}
 
 var closePopup = function () {
   if (overlay && feedbackPopup) {
@@ -45,8 +65,19 @@ var openPopup = function () {
   }
 };
 
-callRequestBtn.addEventListener('click', function (evt) {
-  evt.preventDefault();
+if (callRequestBtn) {
+  callRequestBtn.addEventListener('click', function (evt) {
+    evt.preventDefault();
 
-  openPopup();
-});
+    openPopup();
+  });
+}
+
+if (feedbackPopupForm) {
+  feedbackPopupForm.addEventListener('submit', function () {
+    localStorage.setItem('userName', feedbackPopupFormName.value);
+    localStorage.setItem('userPhoneNumber', feedbackPopupFormPhone.value);
+
+    feedbackPopupForm.submit();
+  });
+}

@@ -232,14 +232,14 @@
           <p class="contacts__description">
             Мы проконсультируем Вас бесплатно
           </p>
-          <form class="contacts__form contacts-form form" action="POST">
+          <form class="contacts__form contacts-form form" method="post" action="http://echo.htmlacademy.ru">
             <div>
               <input type="text" name="first-name" placeholder="Имя">
               <input type="tel" name="phone-number" placeholder="Телефон">
             </div>
             <textarea name="user-question" placeholder="Ваш вопрос"></textarea>
             <div>
-              <button type="submit">Задать вопрос</button>
+              <button type="submit" name="submit">Задать вопрос</button>
               <input class="visually-hidden" type="checkbox" id="user-agreement">
               <label for="user-agreement">
                 Я согласен на обработку персональных данных
@@ -390,14 +390,15 @@
         Оставьте контакты, мы проконсультируем вас
         бесплатно в удобное время
       </p>
-      <form class="feedback-popup__form form form--popup" action="POST">
+      <form class="feedback-popup__form form form--popup" method="post" action="http://echo.htmlacademy.ru">
+        <input type="hidden" name="h1" value="v1">
         <div>
           <input type="text" name="first-name" placeholder="Имя">
           <input type="tel" name="phone-number" placeholder="Телефон">
         </div>
         <textarea name="user-question" placeholder="Ваш вопрос"></textarea>
         <div>
-          <button type="submit">Отправить</button>
+          <button type="submit" name="submit">Отправить</button>
           <input class="visually-hidden" type="checkbox" id="user-agreement-popup">
           <label for="user-agreement-popup">
             Я согласен на обработку персональных данных
