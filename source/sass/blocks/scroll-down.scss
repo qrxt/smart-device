@@ -11,9 +11,17 @@
   @include set-font(14px, 16px);
   @include set-custom-transition(color);
 
+  &--nojs {
+    display: none;
+  }
+
   &:hover,
   &:focus {
     outline: none;
     color: rgba($text-primary-color--dark, 0.6);
+  }
+
+  &:active {
+    color: rgba($text-primary-color--dark, 0.3);
   }
 }
