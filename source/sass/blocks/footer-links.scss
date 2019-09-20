@@ -2,7 +2,30 @@
   width: 36%;
 }
 
+.footer-links__list {
+  @include normalize-list();
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 2px;
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+  }
+}
+
+.footer-links__item {
+  min-width: 39%;
+}
+
 .footer-links__link {
+  font-family: $font-secondary;
+  color: rgba(#1b2d37, 0.5);
+
+  @include set-font(15px, 25px);
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -21,26 +44,23 @@
   @include set-font(15px, 16px);
 }
 
-.footer-links__list {
-  @include normalize-list();
+@media (max-width: $desktop-width) {
+  .footer-links__item {
+    &--about,
+    &--products,
+    &--manufacturing,
+    &--installation {
+      order: 0;
+    }
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 102px;
-  padding-left: 2px;
-
-  @media (max-width: 1160px) {
-    max-height: 100%;
+    &--parts,
+    &--delivery,
+    &--contacts {
+      order: 1;
+    }
   }
 }
 
-.footer-links__link {
-  font-family: $font-secondary;
-  color: rgba(#1b2d37, 0.5);
-
-  @include set-font(15px, 25px);
-}
 
 @media (max-width: $tablet-width) {
   .footer-links {

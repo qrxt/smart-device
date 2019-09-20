@@ -35,13 +35,22 @@ var closePopup = function () {
   if (overlay && feedbackPopup) {
     overlay.classList.remove('overlay--show');
     feedbackPopup.classList.remove(selectorFeedbackPopupShow);
+    window.removeEventListener('scroll', disableScroll);
   }
+};
+
+var disableScroll = function () {
+  window.scrollTo(0, 0);
 };
 
 var openPopup = function () {
   if (overlay && feedbackPopup) {
     overlay.classList.add('overlay--show');
     feedbackPopup.classList.add(selectorFeedbackPopupShow);
+
+    if (getComputedStyle(document.body).overflow === 'visible') {
+      window.addEventListener('scroll', disableScroll);
+    }
 
     document.addEventListener('keydown', function (evt) {
       if (evt.keyCode === KEYCODE_ESCAPE) {
