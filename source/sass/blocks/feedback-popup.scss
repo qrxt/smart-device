@@ -19,12 +19,6 @@
     overflow-y: auto;
   }
 
-  @media (max-width: 1060px) {
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-
   &--show {
     display: block;
   }
@@ -42,6 +36,14 @@
   font-family: $font-secondary;
 
   @include set-font(16px, 22px);
+}
+
+@media (max-width: 550px) {
+  .feedback-popup {
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .feedback-popup__close {
