@@ -69,14 +69,8 @@
   }
 }
 
-@media (max-width: $desktop-width) {
-  .feedback-popup {
-    display: none;
-  }
-}
-
 @media (max-width: $tablet-width) {
   .feedback-popup {
-    display: none;
+    width: 95%;
   }
 }

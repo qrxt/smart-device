@@ -1,15 +1,16 @@
 .about {
-  margin-bottom: 97px;
+  margin-bottom: 77px;
 }
 
 .about__inner {
   padding-left: 330px;
   padding-right: 160px;
-  padding-bottom: 15px;
+  padding-bottom: 35px;
 
   background-repeat: no-repeat;
   background-image: url("../img/2005.png");
   background-position: 122px 5px;
+  background-size: 220px 317px;
 }
 
 .about__title {
@@ -43,7 +44,7 @@
 
 @media (max-width: $desktop-width) {
   .about {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
   }
 
   .about__title {

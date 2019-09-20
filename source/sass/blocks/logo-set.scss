@@ -1,7 +1,6 @@
 .logo-set {
   display: flex;
   align-items: center;
-  background-color: flex-start;
 }
 
 .logo-set img {
@@ -24,7 +23,7 @@
 .logo-set__tagline {
   margin: 0;
 
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: $font-primary;
   color: $text-primary-color--dark;
   text-transform: lowercase;
 

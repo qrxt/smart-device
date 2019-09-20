@@ -2,7 +2,7 @@
   position: relative;
   width: 26.2%;
   min-height: 620px;
-  padding: 31px 11% 0 45px;
+  padding: 31px 11% 135px 45px;
   margin-bottom: 40px;
 
   background-color: darken(#1b3c3f, 4%);
@@ -94,7 +94,7 @@
     width: 100%;
     min-height: 256px;
     background-size: cover;
-    padding: 20px 70% 0 45px;
+    padding: 20px 70% 50px 45px;
     margin-bottom: 45px;
 
     &--manufacturing {
@@ -114,7 +114,7 @@
 
 @media (max-width: $tablet-width) {
   .service {
-    padding: 0 100px 0 34px;
+    padding: 0 100px 60px 34px;
     margin-bottom: 30px;
 
     &--manufacturing {

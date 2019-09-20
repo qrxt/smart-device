@@ -20,15 +20,3 @@
     background-color: rgba($black, 0.8);
   }
 }
-
-@media (max-width: $desktop-width) {
-  .overlay {
-    display: none;
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .overlay {
-    display: none;
-  }
-}
