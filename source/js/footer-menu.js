@@ -4,11 +4,11 @@ var footer = document.querySelector('.page-footer');
 var btnSelectors = ['.title-btn--address', '.title-btn--links'];
 
 var btnToListAssoc = {
-  '.title-btn--address': '.footer-address__items',
-  '.title-btn--links': '.footer-links__list'
+  '.title-btn--address': '.footer-address__items-wrapper',
+  '.title-btn--links': '.footer-links__list-wrapper'
 };
 
-var menuSelectors = ['.footer-address__items', '.footer-links__list'];
+var menuSelectors = ['.footer-address__items-wrapper', '.footer-links__list-wrapper'];
 menuSelectors.forEach(function (selector) {
   var currentMenu = footer.querySelector(selector);
   if (currentMenu) {

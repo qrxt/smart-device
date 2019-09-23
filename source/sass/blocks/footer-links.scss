@@ -75,6 +75,18 @@
     margin: -1px;
   }
 
+  .footer-links__list-wrapper {
+    @include set-custom-transition(max-height);
+    overflow: hidden;
+    max-height: 0;
+
+    &--nojs,
+    &--show {
+      max-height: 3000px;
+      transition: max-height 0.6s ease-in;
+    }
+  }
+
   .footer-links__list {
     display: none;
     padding: 5px 40px 20px 15px;
