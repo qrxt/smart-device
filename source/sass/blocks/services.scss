@@ -12,15 +12,15 @@
 }
 
 .services__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
   @include normalize-list();
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 120px;
 }
 
 .services__item:not(:nth-child(3n)) {
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 @media (max-width: $desktop-width) {

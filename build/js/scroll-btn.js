@@ -1,9 +1,10 @@
 'use strict';
 
-var SERVICES_Y_POSITION = 900;
 var SMOOTH_SCROLL_DURATION = 500;
 
 var scrollBtn = document.querySelector('.scroll-down');
+var nextSection = document.querySelector('.company-information');
+
 
 var easeInOutQuad = function (t, b, c, d) {
   t /= d / 2;
@@ -36,6 +37,6 @@ if (scrollBtn) {
   scrollBtn.classList.remove('scroll-down--nojs');
   scrollBtn.addEventListener('click', function (evt) {
     evt.preventDefault();
-    scrollTo(SERVICES_Y_POSITION, SMOOTH_SCROLL_DURATION);
+    scrollTo(nextSection.offsetTop, SMOOTH_SCROLL_DURATION);
   });
 }
