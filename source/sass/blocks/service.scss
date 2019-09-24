@@ -33,6 +33,10 @@
   &--lighting {
     background-image: url("../img/bg-lighting.jpg");
   }
+
+  @media (max-width: 1300px) {
+    padding: 31px 5% 135px 45px;
+  }
 }
 
 .service__link {
